@@ -1,3 +1,4 @@
+/* eslint no-useless-contact: "error" */
 export default function getSanFranciscoDescription() {
   const year = 2017;
   const budget = {
