@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/named
 import Currency from './3-currency';
 
 export default class Pricing {
@@ -20,6 +19,7 @@ export default class Pricing {
   }
 
   set currency(currency) {
+    if (!(currency instanceof Currency)) throw TypeError('currency must be an instance of Currency');
     this._currency = currency;
   }
 
